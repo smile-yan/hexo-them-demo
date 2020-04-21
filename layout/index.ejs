@@ -1,0 +1,5 @@
+Welcome to index.ejs<br />
+<% site.posts.forEach(function(post){ %>
+    <a href="/<%- post.path %>"><%- post.title %></a>
+    <br />
+<% }); %>
